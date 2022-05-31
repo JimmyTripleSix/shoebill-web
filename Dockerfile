@@ -7,7 +7,7 @@ COPY . .
 RUN ng build --prod
 
 
-FROM nginx:1.17.5
+FROM nginx:alpine
 COPY default.conf /etc/nginx/conf.d/default.conf
 COPY nginx.conf /etc/nginx/nginx.conf
 COPY --from=builder  /app/dist/shoebill-web /usr/share/nginx/html
