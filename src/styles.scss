@@ -3,8 +3,14 @@
 /* Importing Bootstrap SCSS file. */
 @import '~bootstrap/scss/bootstrap';
 
-.cln-background {
+#imgDiv {
+  text-align: center;
 
+  img {
+    width: 70%;
+    margin-top: 5em;
+    margin-bottom: 5em;
+  }
 }
 
 .footer-div {
